@@ -6,5 +6,5 @@ var Board = require('./components/board.jsx');
 var Tile = require('./components/tile.jsx');
 
 document.addEventListener("DOMContentLoaded", function () {
-  ReactDOM.render(<Game />, document.getElementById('main'));
+  ReactDOM.render(<Game className="group main"/>, document.getElementById('main'));
 });

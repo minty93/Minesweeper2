@@ -8,7 +8,7 @@ var Board = React.createClass({
       <div>
         {self.props.board.grid.map(function(row, index) {
           return <div key={index}> {row.map(function(tile, index2){
-            return <Tile key={index2} onClick={self.props.updateGame} ></Tile>;
+            return <Tile key={index2} tile={tile} updateGame={self.props.updateGame} ></Tile>;
           })}
           </div>;
         })}
